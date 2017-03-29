@@ -1,0 +1,25 @@
+/* The animation code, copied from w3schools CSS3 Animations page */
+@keyframes colorchange {
+    0%   {background-color: red;}
+    25%  {background-color: purple;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+body, html {
+  cursor: url('smalldoge.gif'), crosshair;
+  /* doge gif from
+  http://i2.wp.com/media.tenor.co/images/50e14e91d9d4af5a9f425d81f6147ccc/raw */
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: "Comic Sans MS";
+  animation-name: colorchange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+}
