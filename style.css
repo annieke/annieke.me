@@ -1,9 +1,24 @@
-/* The animation code, copied from w3schools CSS3 Animations page */
+/* copied from w3schools CSS3 Animations page */
 @keyframes colorchange {
     0%   {background-color: red;}
     25%  {background-color: purple;}
     50%  {background-color: blue;}
     100% {background-color: green;}
+}
+
+/* i made this one myself!! */
+@keyframes bubble {
+  0% {transform: scale(0.1);}
+  33% {transform: scale(0.33);}
+  66% {transform: scale(0.66);}
+  100% {transform: scale(1);}
+}
+
+@keyframes swinging {
+  0% {transform: rotate(7deg);}
+  50% {transform: rotate(-7deg);}
+  100% {transform: rotate(7deg);}
+
 }
 
 body, html {
@@ -15,11 +30,22 @@ body, html {
   width: 100%;
   font-family: "Comic Sans MS";
   animation-name: colorchange;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
 h1 {
   color: white;
   font-size: 4em;
+  animation-name: swinging;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.dogeborder {
+  width: 10%;
+  height: auto;
+  animation-name: bubble;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
